@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    
+</head>
+<body>
+    <header class="header">
+        <div class="logo">ADVC</div>
+        <div class="search-bar">
+            <i class="fas fa-search"></i>
+            <input placeholder="Search" type="text" />
+        </div>
+        <div class="user-info">
+            <div class="country-info">
+                <img class="flag" alt="Flag of Indonesia" src="https://upload.wikimedia.org/wikipedia/commons/9/9f/Flag_of_Indonesia.svg" />
+                <span class="country-name">Indonesia</span>
+            </div>
+            <div class="admin-info">
+                <img class="avatar" alt="User Avatar" src="https://storage.googleapis.com/a1aa/image/a1QZlEWzDDbyB9avUEU67x6UJvRcHtiyNHyBp8zps6FWRJ9E.jpg" />
+                <div class="admin-details">
+                    <span class="admin-name">Faiz</span>
+                    <span class="admin-role">Admin</span>
+                </div>
+                <div class="dropdown">
+                    <i class="fa-solid fa-bars"></i>
+                    <div class="dropdown-content">
+                        <a href="#"><i class="fa-solid fa-user-gear"></i>User Management</a><hr>
+                        <a href="#"><i class="fa-solid fa-key"></i>Change Password</a><hr>
+                        <a href="#"><i class="fa-solid fa-repeat"></i>Activity Log</a><hr>
+                        <a href="#"><i class="fas fa-sign-out"></i>Log out</a><hr>
+                    </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="content">
+        <div class="sidebar">
+            <ul>
+              <a href="/dashboard-admin/"><li><i class="fas fa-tachometer-alt"></i> Dashboard</li></a>
+                  <a href="/order-list"><li><i class="fas fa-list"></i> Order Lists</li></a>
+                  <a href="#"><li class="active"><i class="fas fa-warehouse"></i> Product Stock</li></a>
+                  <a href="/settings/"><li><i class="fas fa-cog"></i> Settings</li></a>
+            </ul>
+        </div>
+        <div class="product-stock">
+            <h2>Product Stock</h2>
+            <div class="search-bar">
+                <i class="fas fa-search"></i>
+                <input placeholder="Search product name" />
+            </div>
+            <button class="add-product-btn" id="openaddproductmodal">
+                <span class="icon">+</span> Add Product
+            </button>
+            <div class="overlay" id="addProductOverlay"></div>
+            <div class="popup" id="addProductPopup">
+                <button class="close-btn" id="closeAddProduct">&times;</button>
+                <h2>Add Product</h2>
+                <div class="form-container">
+                    <!-- Bagian kiri -->
+                    
+
+                    <!-- Bagian kanan -->
+                    <form id="productForm">
+                        <div class="form-group">
+                            <label for="productName">Product Name</label>
+                            <input type="text" id="productName" name="name" placeholder="Enter product name">
+                        </div>
+                        <div class="form-group">
+                            <label for="category">Category</label>
+                            <input type="text" id="category" name="category" placeholder="Enter category">
+                        </div>
+                        <div class="form-group">
+                            <label for="price">Price</label>
+                            <input type="number" id="price" name="price" placeholder="Enter price">
+                        </div>
+                        <div class="form-group">
+                            <label for="piece">Piece</label>
+                            <input type="number" id="piece" name="piece" placeholder="Enter piece">
+                        </div>
+                        <div class="form-group">
+                            <label for="sizes">Sizes</label>
+                            <input type="text" id="sizes" name="sizes" placeholder="Enter sizes (e.g. M,L,XL)">
+                        </div>
+                        <div class="form-group">
+                            <label for="image">Product Image</label>
+                            <input type="file" id="image" name="image" accept="image/*">
+                        </div>
+                        <button type="submit" class="add-btn">Add Product</button>
+                    </form>                    
+                </div>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Image</th>
+                        <th>Product Name</th>
+                        <th>Category</th>
+                        <th>Price</th>
+                        <th>Piece</th>
+                        <th>Available Size</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Row 1 -->
+                    <tr>
+                        <td><img alt="Apple Watch Series 4" height="50" src="https://storage.googleapis.com/a1aa/image/rvtZBvvBafVGYKGuq6Pw7w3qmefeohbRZwupsFDlRyKqVUSPB.jpg" width="50" /></td>
+                        <td>Apple Watch Series 4</td>
+                        <td>Digital Product</td>
+                        <td>$690.00</td>
+                        <td>63</td>
+                        <td>M,L,XL</td>
+                        <td class="actions">
+                            <i class="fas fa-edit edit"></i>
+                            <i class="fas fa-trash delete"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img alt="Microsoft Headsquare" height="50" src="https://storage.googleapis.com/a1aa/image/dppVpJVBaSZ5KpmpVCLht0j3AHgfkeh0AftMr1eO9dvkVUSPB.jpg" width="50"/></td>
+                        <td>Microsoft Headsquare</td>
+                        <td>Digital Product</td>
+                        <td>$190.00</td>
+                        <td>13</td>
+                        <td>M,L,XL</td>
+                        <td class="actions">
+                            <i class="fas fa-edit edit"></i>
+                            <i class="fas fa-trash delete"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img alt="Women's Dress" height="50" src="https://storage.googleapis.com/a1aa/image/4Om9enspzJzndiNbwddey4INLyVM3zwrRrDgNfjjwjTqKKpnA.jpg" width="50"/></td>
+                        <td>Women's Dress</td>
+                        <td>Fashion</td>
+                        <td>$640.00</td>
+                        <td>635</td>
+                        <td>M,L,XL</td>
+                        <td class="actions">
+                            <i class="fas fa-edit edit"></i>
+                            <i class="fas fa-trash delete"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img alt="Samsung A50" height="50" src="https://storage.googleapis.com/a1aa/image/mFnOLCO6ccrgFtXfIJpqaaJ8g5Isok6yPZRJFVxSm7upiS6JA.jpg" width="50"/></td>
+                        <td>Samsung A50</td>
+                        <td>Mobile</td>
+                        <td>$400.00</td>
+                        <td>67</td>
+                        <td>M,L,XL</td>
+                        <td class="actions">
+                            <i class="fas fa-edit edit"></i>
+                            <i class="fas fa-trash delete"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img alt="Camera" height="50" src="https://storage.googleapis.com/a1aa/image/uJ8pq0Kd0fwvHS4A9LCLcLtVj3lQhAP2UuiBVZsPZ9JriS6JA.jpg" width="50"/></td>
+                        <td>Camera</td>
+                        <td>Electronic</td>
+                        <td>$420.00</td>
+                        <td>52</td>
+                        <td>M,L,XL</td>
+                        <td class="actions">
+                            <i class="fas fa-edit edit"></i>
+                            <i class="fas fa-trash delete"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img alt="Microsoft Headsquare" height="50" src="https://storage.googleapis.com/a1aa/image/dppVpJVBaSZ5KpmpVCLht0j3AHgfkeh0AftMr1eO9dvkVUSPB.jpg" width="50"/></td>
+                        <td>Microsoft Headsquare</td>
+                        <td>Digital Product</td>
+                        <td>$190.00</td>
+                        <td>13</td>
+                        <td>M,L,XL</td>
+                        <td class="actions">
+                            <i class="fas fa-edit edit"></i>
+                            <i class="fas fa-trash delete"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img alt="Women's Dress" height="50" src="https://storage.googleapis.com/a1aa/image/4Om9enspzJzndiNbwddey4INLyVM3zwrRrDgNfjjwjTqKKpnA.jpg" width="50"/></td>
+                        <td>Women's Dress</td>
+                        <td>Fashion</td>
+                        <td>$640.00</td>
+                        <td>635</td>
+                        <td>M,L,XL</td>
+                        <td class="actions">
+                            <i class="fas fa-edit edit" id="openeditbutton"></i>
+                            <!-- Edit Product Form -->
+<div class="overlay" id="editProductOverlay"></div>
+<div class="popup" id="editProductPopup">
+    <button class="close-btn" id="closeEditProduct">&times;</button>
+    <h2>Edit Product</h2>
+    <div class="form-container">
+        <!-- Bagian kiri -->
+        <div class="form-left">
+            <img id="previewImage" src="" alt="Preview" style="max-width: 200px; display: none;">
+            <span class="upload-icon">+</span>
+        </div>
+
+        <!-- Bagian kanan -->
+        <form id="editProductForm">
+            <input type="hidden" id="editProductId" name="id">
+            <div class="form-group">
+                <label for="editProductName">Product Name</label>
+                <input type="text" id="editProductName" name="name" placeholder="Enter product name">
+            </div>
+            <div class="form-group">
+                <label for="editCategory">Category</label>
+                <input type="text" id="editCategory" name="category" placeholder="Enter category">
+            </div>
+            <div class="form-group">
+                <label for="editPrice">Price</label>
+                <input type="number" id="editPrice" name="price" placeholder="Enter price">
+            </div>
+            <div class="form-group">
+                <label for="editPiece">Piece</label>
+                <input type="number" id="editPiece" name="piece" placeholder="Enter piece">
+            </div>
+            <div class="form-group">
+                <label for="editSizes">Sizes</label>
+                <input type="text" id="editSizes" name="sizes" placeholder="Enter sizes (e.g. M,L,XL)">
+            </div>
+            <div class="form-group">
+                <label for="editImage">Product Image</label>
+                <input type="file" id="editImage" name="image" accept="image/*">
+            </div>
+            <button type="submit" class="add-btn">Save Changes</button>
+        </form>
+    </div>
+</div>
+                            <i class="fas fa-trash delete"></i>
+                            <div class="overlay" id="deleteOverlay"></div>
+                            <div class="popup" id="deletePopup">
+                            <h2>Confirm Deletion</h2>
+                            <p>Are you sure you want to delete this item?</p>
+                            <div class="popup-actions">
+                            <button id="confirmDeleteBtn" class="confirm-btn">Yes</button>
+                            <button id="cancelDeleteBtn" class="cancel-btn">No</button>
+                        </div>
+                        </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+<script src="clonedashboard.js"></script>
+</html>
+
+

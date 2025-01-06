@@ -1,0 +1,377 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  font-family: Poppins;
+}
+
+.header {
+  background-color: #faa0a0;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .logo a {
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
+  font-style: italic;
+  text-decoration: none;
+}
+
+.header .nav {
+  display: flex;
+  gap: 30px;
+}
+
+.header .nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  position: relative;
+  transition: color 0.3s ease, font-size 0.3s ease;
+}
+
+.header .nav a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transition: width 0.3s ease, left 0.3s ease;
+}
+
+.header .nav a:hover {
+  color: white;
+  font-size: 1.05rem;
+}
+
+.header .nav a:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.header .icons {
+  display: flex;
+  gap: 15px;
+}
+
+.header .icons a i {
+  font-size: 18px;
+  color: black;
+  position: relative;
+  right: 8rem;
+}
+
+.header .icons a i:hover {
+  color: white;
+}
+
+.main {
+  justify-content: space-between;
+  align-items: center;
+  padding: 20.2rem;
+  background-size: cover;
+  background-image: url(Homepage.png);
+  background-repeat: no-repeat;
+  background-color: #e3e3e3;
+}
+
+.main .text {
+  max-width: 50%;
+}
+
+.main .text h1 {
+  font-size: 36px;
+  color: black;
+}
+
+.main .text p {
+  font-size: 18px;
+  color: black;
+}
+
+.main .buttons {
+  margin-top: 20px;
+}
+
+.main .buttons button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: 1px;
+  cursor: pointer;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+
+.main .buttons .register {
+  background-color: #faa0a0;
+  color: black;
+}
+
+.main .buttons .register:hover {
+  background-color: #e98f8f;
+}
+
+.main .buttons .login {
+  background-color: #d3d3d3;
+  color: black;
+}
+
+.main .buttons .login:hover {
+  background-color: #8e8e8e;
+}
+
+.main .image {
+  max-width: 50%;
+}
+
+.main .image img {
+  width: 100%;
+}
+.overlay2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Setengah transparan hitam */
+  z-index: 999; /* Pastikan overlay ada di atas konten lain */
+  display: none; /* Tersembunyi secara default */
+}
+
+/* Login Page */
+.container-login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 300px;
+  height: 500rem;
+  text-align: center;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 20px auto;
+  position: fixed;
+  top: 20.8%;
+  left: 140%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 0;
+  transition: 0.3s;
+  z-index: 1000;
+}
+.container-login.active {
+  left: 92.1%;
+  display: flex;
+}
+body.login-active .overlay {
+  display: block;
+}
+
+.login-header {
+  position: relative;
+  background-color: #f28b8b;
+  color: white;
+  padding: 14px;
+  bottom: 1.3rem;
+}
+
+.login-header h2 {
+  margin: 0;
+  font-size: 20px;
+  margin-right: 13rem;
+}
+
+.close-btn {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.form-group {
+  margin: 15px 20px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.submit-btn {
+  background-color: #f28b8b;
+  color: white;
+  border: none;
+  padding: 10px;
+  width: calc(100% - 40px);
+  margin: 0 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.forgot-password {
+  margin: 15px 0;
+}
+
+.forgot-password a {
+  color: black;
+  text-decoration: none;
+}
+
+.register-btn {
+  border: 1px solid black;
+  padding: 10px;
+  width: calc(100% - 40px);
+  margin: 0 20px 20px 20px;
+  border-radius: 4px;
+  background-color: white;
+  cursor: pointer;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Setengah transparan hitam */
+  z-index: 999; /* Pastikan overlay ada di atas konten lain */
+  display: none; /* Tersembunyi secara default */
+}
+
+/*Register Page*/
+.container-register {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 300px;
+  height: 1200px;
+  text-align: center;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  top: -19vh; /* Menggunakan viewport height */
+  left: 120%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  padding: 0;
+  transition: 0.3s;
+  z-index: 1000;
+}
+
+.container-register.active {
+  left: 92.1%;
+  display: flex;
+  bottom: 100;
+}
+
+body.register-active .overlay {
+  display: block;
+}
+
+.register-header {
+  position: relative;
+  background-color: #f28b8b;
+  color: white;
+  padding: 15px;
+  bottom: 1.3rem;
+}
+
+.register-header h2 {
+  margin: 0;
+  font-size: 20px;
+  margin-right: 11rem;
+}
+
+.close-btn {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.close-btn2 {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.form-group {
+  margin: 15px 20px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.submit-btn {
+  background-color: #f28b8b;
+  color: white;
+  border: none;
+  padding: 10px;
+  width: calc(100% - 40px);
+  margin: 0 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.login-link {
+  margin: 15px 0;
+}
+
+.login-link a {
+  color: black;
+  text-decoration: none;
+}
+
+@media (max-width: 1600px) {
+  .container-login {
+    top: 12.2rem;
+  }
+  .container-register {
+    top: 13.25rem;
+  }
+  .main {
+    padding: 33.35vh;
+    background-size: auto;
+  }
+}
+
+.btn-admin {
+  position: relative;
+  top: 20rem;
+  right: 20rem;
+}
+.btn-admin a {
+  text-decoration: none;
+  color: blue;
+}

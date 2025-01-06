@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <!-- Gradasi warna latar -->
+    <linearGradient id="backgroundGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fc939f;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ffb6c1;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Latar belakang -->
+  <rect width="1920" height="1080" fill="url(#backgroundGradient)" />
+  
+  <!-- Motif Abstrak Lengkung -->
+  <path d="M0,200 C400,50 800,350 1200,150 S1920,300 1920,800 S1400,900 1000,700 S400,1050 0,800 Z" 
+        fill="#ff8ca1" opacity="0.7" />
+  
+  <path d="M0,700 C300,500 700,900 1100,600 S1920,400 1920,900 S1500,1000 1200,850 S500,1100 0,900 Z" 
+        fill="#ffbccd" opacity="0.5" />
+  
+  <path d="M0,900 C200,800 600,1200 1000,900 S1600,700 1920,1100 V1080 H0 Z" 
+        fill="#ff99ab" opacity="0.6" />
+</svg>
