@@ -1,102 +1,130 @@
-
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/5a4303a6-9929-4dc4-8554-925bd625ccd4" width="500" height="250" alt="Martabak Lumer Telur Logo"/>
+  <img src="https://github.com/user-attachments/assets/5a4303a6-9929-4dc4-8554-925bd625ccd4" width="500" alt="CMS for Clothing Shop"/>
 </p>
 
-<h1 align="center"><strong>CMS Website For Martabak Lumer Telur</strong></h1>
+<h1 align="center">🛍️ CMS for Clothing Shop</h1>
 
 <p align="center">
+A simple <strong>Content Management System (CMS)</strong> for an online clothing store, developed as an academic project for the <strong>Project Based Learning (PBL)</strong> course at <strong>Politeknik Negeri Batam</strong>.
 </p>
-                                                                                        
-
-## 📄Project Best Learning Kelompok 2
-
-| NIM         | Nama Lengkap                                | Role                      | Posisi         |
-|-------------|----------------------------------------------|---------------------------|----------------|
-| 3312411023  | Achen irwan saputera                         |Frontend and Backend       | Ketua Grup     |
-| 3312411029  | Owen Hutagalung                               | Frontend and Backend      | Anggota Grup   |
-| 3312411021  | Aldi alpedo siagian                          | Frontend and Backend      | Anggota Grup   |
-| 3312411030  | Syahnaz                        | Frontend and UI?UX Design      | Anggota Grup   |
-| 3312411030  | Muhammad Faiz diva suanda                        | Frontend and Backend      | Anggota Grup   |
-
-
-### 🔧 Fitur yang Tersedia
-- dashboard
-- menu
-- about us
-- contact
-- location
-- payment
-- keranjang
-- search bar
-- kategori filter
-
-### 📦 Manajemen Produk
-- Daftar produk
-- Detail produk
-- kategori produk
-- CRUD produk untuk admin
-
-### 🧑‍💼 Manajemen Admin
-- Dashboard admin
-- Manajemen user & produk
-
-### 🧭 Navigasi & UI
-- Navbar responsif (desktop & mobile)
-- Dropdown menu profil
-- Tombol WhatsApp langsung ke admin
-- Footer dengan informasi kontak
-### 📄 Halaman
-- Home
-- Products
-- About
-- Location
-- Profile
-- Admin Dashboard
-
-### 📱 Responsivitas
-- Tampilan mobile-friendly
-- Menu mobile
-- Layout yang responsif
-
-### 🔗 Integrasi
-- WhatsApp API
-- Google Maps untuk lokasi toko
-
-### 🎨 Styling & UI/UX
-- Desain modern dengan Tailwind CSS
-- Animasi & transisi
-- Font Awesome icons
-- Google Fonts (Poppins & Pacifico)
-
-### 🔒 Keamanan
-- Middleware untuk autentikasi & admin
-- CSRF protection
-- Validasi form
-
-### 🗄️ Database
-- MySQL / MariaDB
-- Eloquent ORM (Laravel)
 
 ---
 
-## 🛠️ Teknologi yang Digunakan
+# 📖 About the Project
 
-| Kategori              | Teknologi                                                                 |
-|-----------------------|---------------------------------------------------------------------------|
-| **Backend**           | PHP, MySQL/MariaDB                                    |
-| **Frontend**          | HTML, CSS (Tailwind CSS), JavaScript, Blade Template                      |
-| **Styling & UI**      | Tailwind CSS, Font Awesome, Google Fonts (Poppins, Pacifico)              |
+**CMS for Clothing Shop** is a web-based e-commerce management system designed to simplify the management of products, customer orders, and store operations.
 
+The system provides an online shopping experience through features such as a shopping cart, payment gateway integration, product search, and category filtering. An administrator dashboard is also available to manage products and users, similar to a simplified e-commerce platform such as Shopee.
 
----
-
-## 🚀 Catatan Pengembangan
-Proyek ini masih dalam tahap pengembangan dan akan terus ditingkatkan dari sisi fungsionalitas dan user experience.  
-**Stay tuned for more updates!** 🌸
+This project was developed as an **academic Project Based Learning (PBL)** during the **second semester** to strengthen fundamental web development skills using native web technologies.
 
 ---
 
-## 📌 Lisensi
-> Proyek ini dibuat **untuk tujuan pembelajaran** dalam kegiatan Project Based Learning dan **bukan untuk penggunaan komersial**.  
-> Semua hak cipta milik **Kelompok 2 – Informatika 2A Malam, Polibatam**.
+# 👥 Project Team
+
+| Student ID | Name                      | Role                                | Position    |
+| ---------- | ------------------------- | ----------------------------------- | ----------- |
+| 3312411023 | Achen Irwan Syahputera    | Frontend & Backend Developer        | Team Leader |
+| 3312411029 | Owen Hutagalung           | Frontend & Backend Developer        | Team Member |
+| 3312411021 | Aldi Alpedo Siagian       | Frontend & Backend Developer        | Team Member |
+| 3312411030 | Syahnaz                   | Frontend Developer & UI/UX Designer | Team Member |
+| 3312411030 | Muhammad Faiz Diva Suanda | Frontend & Backend Developer        | Team Member |
+
+---
+
+# ✨ Features
+
+## 🛒 Customer Features
+
+* Product catalog
+* Product details
+* Shopping cart
+* Payment gateway
+* Product search
+* Category filter
+* Responsive navigation
+* About Us page
+* Contact page
+* Store location
+* Customer profile
+
+---
+
+## 🛍️ Product Management
+
+* Product listing
+* Product categories
+* Add, edit, and delete products
+* Product inventory management
+
+---
+
+## 👨‍💼 Admin Panel
+
+* Admin dashboard
+* Product management
+* User management
+* Order management
+
+---
+
+## 🎨 User Interface
+
+* Responsive design
+* Mobile-friendly layout
+* Bootstrap components
+* Modern and clean interface
+* Font Awesome icons
+* Google Fonts
+
+---
+
+## 🌐 Integrations
+
+* WhatsApp API
+* Google Maps
+* Payment Gateway
+
+---
+
+# 🛠️ Technology Stack
+
+| Category          | Technology                           |
+| ----------------- | ------------------------------------ |
+| Frontend          | HTML5, CSS3, Bootstrap 5, JavaScript |
+| Backend           | PHP (Native)                         |
+| Database          | MySQL                                |
+| Development Tools | Visual Studio Code, XAMPP            |
+
+---
+
+# 🎯 Project Objectives
+
+* Develop a simple web-based e-commerce platform.
+* Apply CRUD operations in a real-world case study.
+* Implement shopping cart and payment features.
+* Learn database management using MySQL.
+* Improve collaboration through Project Based Learning (PBL).
+
+---
+
+# 📌 Project Notes
+
+* This project was developed for **academic purposes** as part of the **Project Based Learning (PBL)** curriculum at **Politeknik Negeri Batam**.
+* The application demonstrates the implementation of a basic **Content Management System (CMS)** for an online clothing store.
+* The project focuses on learning web development fundamentals using **HTML**, **CSS**, **Bootstrap**, **JavaScript**, **PHP Native**, and **MySQL**.
+
+---
+
+# 📄 License
+
+This project was created for educational purposes only as part of the **Project Based Learning (PBL)** program at **Politeknik Negeri Batam**.
+
+It is intended for learning and portfolio purposes and is **not intended for commercial use**.
+
+---
+
+<p align="center">
+Developed with ❤️ by <strong>Group 2</strong><br>
+Project Based Learning • Department of Informatics Engineering • Politeknik Negeri Batam
+</p>
